@@ -1,0 +1,22 @@
+﻿<Window x:Class="BlackJackGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BlackJackGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\MANN\source\repos\BlackJackGame\BlackJackGame\JPEG\Backrground.jpg"/>
+        </Grid.Background>
+        <WrapPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Content="Hit" HorizontalAlignment="Center" Margin="10"  Width="100" Height="50" Click="Hit_Click"/>
+            <Button Content="Stand" HorizontalAlignment="Center" Margin="10" Width="100" Height="50" Click="Stand_Click"/>
+        </WrapPanel>
+        <WrapPanel Name="PlayerPanel" VerticalAlignment="Bottom" Background="AliceBlue" Height="180" Width="400">
+        </WrapPanel>
+        <WrapPanel Name="DealerPanel" VerticalAlignment="Top" Background="AliceBlue" Height="180" Width="400">
+        </WrapPanel>
+    </Grid>
+</Window>
